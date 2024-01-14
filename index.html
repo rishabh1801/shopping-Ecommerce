@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastram shopping website</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Piedra&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div tabindex="0" class="logo">
+                <h1>Vastram...</h1>
+            </div>
+            <ul>
+                <li>
+                    <a tabindex="0" id="home" onclick="home()">Home</a>
+                    <a tabindex="0" id="shop" onclick="shop()">Shops</a>
+                    <a tabindex="0" id="blog" onclick="blog()">Blog</a>
+                    <a tabindex="0" id="about" onclick=" about()">About</a>
+                    <a tabindex="0" id="contact" onclick="contact()">Contact</a>
+                    <i id="addItem()" onclick="cart()" class="fa-sharp fa-solid fa-cart-shopping"></i>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mainPage">
+            <div tabindex="0" class="text">
+                <h2>Vastram...</h2>
+                <h1 class="heads">Super Value Deals</h1>
+                <h1>On All Products</h1>
+                <p>A Place where fashion is for all.....</p>
+                <button>Explore</button>
+            </div>
+            <img src="frontpage.png" alt="">
+        </div>
+
+
+
+        <div tabindex="0" class="cardMen">
+            <div tabindex="0" class="head">
+                <h1> Vastram <span>Men's Wear</span></h1>
+            </div>
+            <div class="card" id="item1">
+                <div class="crd">
+                    <img src="stripes.webp" alt="" onclick="showCard(this)">
+                    <div tabindex="0" class="txt">
+                        <h3>Cotton stripes Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button onclick="add(item1)">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd" id="item2">
+                    <img src="srt2.webp" alt="" onclick="showCard(this)">
+                    <div tabindex="0" class="txt">
+                        <h3>Cotton semiformal Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div class="crd">
+                    <img src="srt6.webp" alt="" onclick="showCard(this)">
+                    <div tabindex="0" class="txt">
+                        <h3>Cotton printed Shirt's</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div tabindex="0" class="cardgirl">
+            <div tabindex="0" class="head">
+                <h1>Vastram <span>Women's Wear</span></h1>
+            </div>
+
+            <div tabindex="0" class="card" id="girl1">
+                <div class="crd">
+                    <img src="wn6.webp" alt="" onclick="showCard(this) ">
+                    <div tabindex="0" class="txt">
+                        <h3>Trending Girl Tops</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div tabindex="0" class="crd" id="girl2">
+                    <img src="wn4.webp" alt="" onclick="showCard(this) ">
+                    <div tabindex="0" class="txt">
+                        <h3>Pink floral print dress</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+                <div tabindex="0" class="crd" id="girl3">
+                    <img src="wn5.webp" alt="" onclick="showCard(this)">
+                    <div tabindex="0" class="txt">
+                        <h3>Polka dots dress</h3>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                        <button>Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Full cart  -->
+        <div tabindex="0" class="fullPage">
+            <img id="cartImg" src=" " alt="">
+            <div tabindex="0" class="cartText">
+                <h1>Vastram Offer : Trending Shop <br> Now</h1>
+                <h2>Special Price</h2>
+                <h2>$11</h2>
+                <p>Amazing cloth quality with superior comfort.</p>
+                <p>Trendy designs.</p>
+                <p>From your favourite brand.</p>
+                <div class="btn">
+                    <button>Buy Now</button>
+                    <button onclick="addToCart()">Add To Cart</button>
+
+                </div>
+                <div class="btns">
+                    <button class="relode" onclick="location.reload()">Back </button>
+                </div>
+            </div>
+            
+
+        </div>
+
+        <!-- add to cart -->
+        <div class="addCart">
+
+        </div>
+
+        <div class="blogContent">
+            <div tabindex="0" class="head">
+                <h1>Vastram Top <span>Blog's</span></h1>
+            </div>
+
+            <div tabindex="0" class="trd">
+                <div tabindex="0" class="trending">
+                    <img src="tr1.webp" alt="">
+                    <div tabindex="0" class="txt">
+                        <h3>Trending Girl Cloths</h3><br>
+                        <p>Click below to know what is goin on with girls dressing trends!!!!</p><br>
+                        <a href="https://influencermarketinghub.com/best-fashion-blogs/">Read More</a>
+                    </div>
+                </div>
+                <div tabindex="0" class="trending">
+                    <img src="tr3.webp" alt="">
+                    <div tabindex="0" class="txt">
+                        <h3>Trending Boys Cloths</h3> <br>
+                        <p>Get to know about all the trends of boy's fashion this season. Whatever you want to know!!!</p><br>
+                        <a href="https://www.apetogentleman.com/">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div tabindex="0" class="about">
+            <div tabindex="0" class="aboutText">
+                <h1>#Know Us...</h1>
+                <p>Vastram: Redefining Elegance in Fashion</p>
+            </div>
+
+            <div tabindex="0" class="aboutus">
+                <img src="about us.png" alt="">
+                <div tabindex="0" class="dumiText">
+                    <h1>Who we are ?</h1>
+                    <p>
+                        Vastram, a cutting-edge fashion brand, embodies sophistication and style for the modern individual. With a commitment to quality craftsmanship and contemporary design, Vastram seamlessly blends tradition with innovation. Our curated collections showcase a fusion of cultural influences, offering a diverse range of attire that caters to the discerning taste of fashion enthusiasts. Embracing elegance and trendsetting aesthetics, Vastram is the epitome of sartorial excellence, empowering individuals to make a statement through their wardrobe choices..</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+        <div tabindex="0" class="contact">
+            <div tabindex="0" class="contactBanner">
+                <h1>#Let's Connect</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, iure eos!</p>
+
+            </div>
+            <div tabindex="0" class="connect">
+                <div tabindex="0" class="connectText">
+                    <h1>Visit Our Office or Contact <br> Us Today</h1>
+                    <p>Address : UB CITY, Benagaluru, India</p>
+                    <p>Contact : xyz123@gmail.com</p>
+                    <p>Number : 9123456789</p>
+                </div>
+                <img src="maps.png" alt="">
+            </div>
+
+            <div tabindex="0" class="form">
+                <h1>Connect with Us. Fill Form</h1>
+                <input type="text" placeholder="Enter Your FirstName"> <br>
+                <input type="text" placeholder="Enter Your LsstName"> <br>
+                <input type="text" placeholder="Enter Your Email"><br>
+                <input type="text" placeholder="Enter Your Number"><br>
+                <input type="text" placeholder="Enter Your Address"><br>
+                <button>Submit</button>
+
+            </div>
+        </div>
+
+        <div tabindex="0" class="letter">
+            <div class="sign">
+                <h2>Sign Up for NewsLetter</h2>
+                <p>sign up here to get the best experience of your life.</p>
+            </div>
+            <div class="inp">
+                <input type="text" placeholder="Enter Email Address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Vastram</h1>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>About US</h3>
+                <p>Adrress : Benagaluru, India.
+                </p>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>Satisfation</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Contect</h3>
+                <p>9123456789</p>
+                <p>Customer</p>
+                <p>Comming up..</p>
+                <p>New Arrival</p>
+
+            </div>
+            <div class="Ftext">
+                <h3>Trending</h3>
+                <p>Service</p>
+                <p>Customer</p>
+                <p>SHops</p>
+                <p></p>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
